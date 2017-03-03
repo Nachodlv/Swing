@@ -1,4 +1,3 @@
-package TPSwing;
 
 import javax.swing.*;
 import java.awt.*;
@@ -8,7 +7,7 @@ import java.awt.event.ActionListener;
  * Created by GonzaOK on 2/3/17.
  */
 public class StartGameWindow extends JFrame {
-
+    JLabel labelForImage;
     public StartGameWindow(ActionListener backListener){
 
         super("Start Game");
@@ -25,17 +24,11 @@ public class StartGameWindow extends JFrame {
 
         getContentPane().add(panelPageEnd,borderLayout.PAGE_END);
 
-        JPanel panelCenter = new JPanel();
+        ImageIcon imageIcon = new ImageIcon("src/Image/pacman.png");
+        labelForImage = new JLabel();
+        labelForImage.setIcon(imageIcon);
 
-
-        Imagen imagen = new Imagen();
-
-        panelCenter.add(imagen);
-
-
-
-
-        getContentPane().add(panelCenter,borderLayout.CENTER);
+        getContentPane().add(labelForImage,borderLayout.PAGE_START);
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         pack();
@@ -45,6 +38,7 @@ public class StartGameWindow extends JFrame {
 
     public void showSelf(){
         setVisible(true);
+        labelForImage.setVisible(true);
     }
 
     public void hideSelf(){

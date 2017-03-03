@@ -1,4 +1,3 @@
-package TPSwing;
 
 /**
  * Created by GonzaOK on 2/3/17.

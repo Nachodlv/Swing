@@ -1,6 +1,5 @@
-package TPSwing;
 
-import org.apache.batik.util.gui.LanguageDialog;
+
 
 import javax.swing.*;
 import java.awt.*;

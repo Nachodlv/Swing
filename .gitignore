@@ -1,5 +1,6 @@
 **/.idea
 .DS-Store
+Swing.iml
 Swing2.iml
 **/.git
 **/out

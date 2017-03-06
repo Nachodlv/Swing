@@ -4,19 +4,19 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 
 /**
- * A window model where the options setting are, such as sound, music and graphics.
+ * A window model where settings such as sound, music and graphics can be turned on and off.
  */
 public class SettingsWindow extends JFrame {
 
     /**
-     * it creates theSettingsWindow
+     * Creates the SettingsWindow
      * <p>
-     *     It creates a window with a borderLayout, where in the page start it is added a label
-     *     with the name "Settings". In the center it start inserting a panel with a boxLayour in which
-     *     it is assembled a panel with a grid layout. In the grid it is added the label sound and music
-     *     with his respective Jradio buttons. Then, in the boxLayour it is inserted the Graphics label,
-     *     and with another boxLayout with X.layout it is assembled the shadow and anti-aliasing button.
-     *     At the page end of the border layout there it is the back button.
+     *     It creates a window with a borderLayout, where in the PageStart a label with the name "Settings" is added.
+     *     In the center, a GridLayout is contained within the center of a BoxLayout.
+     *     In the grid the labels Sound and Music are added with their respective JRadio buttons.
+     *     Then, in the boxLayout the Graphics label is inserted, and with another boxLayout the shadow and
+     *     anti-aliasing buttons are assembled.
+     *     In the page end of the BorderLayout there is a Back button.
      * </p>
      * @param backListener for the back button. It returns to the Main Window
      * @param soundListenerTrue for the on button of the sound.

@@ -4,7 +4,7 @@
  */
 
 /**
- * The class it is created to facilitate the Setting class and to stock different variables
+ * The class is created as an auxiliary of the SettingsWindow, by stocking different variables.
  */
 public class Settings {
     boolean sound = true;
@@ -30,7 +30,7 @@ public class Settings {
     }
 
     /**
-     * Change the sound to the value
+     * Changes the sound to the value
      * @param value A boolean which will represent the state of the sound
      */
     public void changeSound(boolean value){
@@ -48,7 +48,7 @@ public class Settings {
     }
 
     /**
-     * Change the shadow to the value to his contrary
+     * Changes the shadow state to its opposite value
      */
     public void changeShadows(){
         shadows = !shadows;
@@ -56,7 +56,7 @@ public class Settings {
     }
 
     /**
-     * Change the anti-aliasing to the value to his contrary
+     * Changes the anti-aliasing state to its opposite value
      */
     public void changeAntialiasing(){
         antialiasing = !antialiasing;

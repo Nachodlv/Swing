@@ -6,16 +6,16 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 
 /**
- * The main window of the program, it contains the Start Game, Settings and Exit buttons.
+ * The main window of the program. Contains the Start Game, Settings and Exit buttons.
  */
 public class MainWindow extends JFrame{
 
     /**
      * Constructor for the MainWindow class.
      * <p>
-     *     It add to the main windows the title Main Menu. the layout of the frame is a borderLayout and it is added
-     *     in the PageStart the title "Trabajo Practico Swing" with a subtitle with the names of the member of the group.
-     *     Tn the Center of the borderLayout there it is a panel with a boxLayour and inside of it there are three buttons,
+     *     Adds the "Main Menu" title to the main window. The layout of the frame is a borderLayout. The title "Trabajo Practico
+     *     Swing" is added within the PageStart with a subtitle containing the names of the member of the group.
+     *     In the Center of the borderLayout there it is a panel with a boxLayout and inside of it there are three buttons,
      *     "Start Game, Settings and Exit" which are centered.
      *</p>
      *@param startGameListener Start Game: go to the Start Game window.

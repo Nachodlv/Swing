@@ -1,5 +1,5 @@
 /**
- * It execute the program instantiating the Controller class.
+ * It executes the program instansiating the Controller class.
  */
 public class Main {
 

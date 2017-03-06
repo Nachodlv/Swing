@@ -17,7 +17,7 @@ public class Controller {
     /**
      * Constructor for controller
      * <p>
-     *     It instantiates the mainWindows, startGameWindow and the settingsWindow. Also, it shows the mainWindow
+     *     It creates a new instance of the mainWindow, startGameWindow and the settingsWindow. Also, it shows the mainWindow.
      * </p>
      */
     public Controller(){
@@ -33,7 +33,7 @@ public class Controller {
         /**
          * ActionListener for the Start Game button in the main window
          * <p>
-         *     It hides the mainWindow and show the startGameWindow
+         *     It hides the mainWindow and shows the startGameWindow
          * </p>
          */
         public void actionPerformed(ActionEvent e) {
@@ -45,8 +45,8 @@ public class Controller {
     /**
      * ActionListener for the back buttons
      * <p>
-     *     It hides the startGameWindow and the settingsWindow and show the mainWindow.
-     *     It is used for the back button of the start game window and the settings window.
+     *     It hides the startGameWindow and the settingsWindow and shows the mainWindow.
+     *     It is used for the Back button in the StartGame window and the Settings window.
      * </p>
      */
     ActionListener backListener = new ActionListener() {
@@ -75,7 +75,7 @@ public class Controller {
     /**
      * ActionListener for the exit button in the main window
      * <p>
-     *     It hides the mainWindow and end the program
+     *     It hides the mainWindow and ends the program
      * </p>
      */
     ActionListener exitListener = new ActionListener() {
@@ -102,7 +102,7 @@ public class Controller {
     /**
      * ActionListener for the sound button in the settingWindow
      * <p>
-     *     It change the value of the sound setting to false
+     *     It changes the value of the sound setting to false
      * </p>
      */
 
@@ -117,7 +117,7 @@ public class Controller {
     /**
      * ActionListener for the music button in the settingWindow
      * <p>
-     *     It change the value of the music setting to true
+     *     It changes the value of the music setting to true
      * </p>
      */
     ActionListener musicListenerTrue = new ActionListener() {
@@ -130,7 +130,7 @@ public class Controller {
     /**
      * ActionListener for the music button in the settingWindow
      * <p>
-     *     It change the value of the music setting to false
+     *     It changes the value of the music setting to false
      * </p>
      */
     ActionListener musicListenerFalse = new ActionListener() {
@@ -143,7 +143,7 @@ public class Controller {
     /**
      * ActionListener for the shadow button in the settingWindow
      * <p>
-     *     It change the value of the shadow setting to the contrary
+     *     It changes the value of the shadow setting to its opposite
      * </p>
      */
     ActionListener shadowListener = new ActionListener() {
@@ -156,7 +156,7 @@ public class Controller {
     /**
      * ActionListener for the anti-aliasing button in the settingWindow
      * <p>
-     *     It change the value of the anti-aliasing setting to the contrary
+     *     It changes the value of the anti-aliasing setting to its contrary
      * </p>
      */
     ActionListener antiAliasingListener = new ActionListener() {

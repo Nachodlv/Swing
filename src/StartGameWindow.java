@@ -12,8 +12,8 @@ public class StartGameWindow extends JFrame {
     /**
      * It creates the StartGameWindow
      * <p>
-     *     The frame has a borderLayour, in the pageStart there it is an image which is centered
-     *     and in the pageEnd a back button
+     *     The frame has a borderLayout, in the pageStart there is an image which is centered
+     *     and in the pageEnd just a Back button
      * </p>
      * @param backListener is an ActionListener for the back button. It goes back to the MainWindow.
      */

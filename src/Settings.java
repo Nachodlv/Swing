@@ -2,12 +2,19 @@
 /**
  * Created by GonzaOK on 2/3/17.
  */
+
+/**
+ * The class it is created to facilitate the Setting class and to stock different variables
+ */
 public class Settings {
     boolean sound = true;
     boolean music = true;
     boolean shadows = false;
     boolean antialiasing = false;
 
+    /**
+     * Print on screen the variables and their respective states
+     */
     public void print(){
         if(sound) System.out.println("Sound on\n");
         else System.out.println("Sound off\n");
@@ -22,21 +29,35 @@ public class Settings {
         else System.out.println("Antialiasing off\n");
     }
 
-    public void changeSound(){
-        sound = !sound;
+    /**
+     * Change the sound to the value
+     * @param value A boolean which will represent the state of the sound
+     */
+    public void changeSound(boolean value){
+        sound = value;
         print();
     }
 
-    public void changeMusic(){
-        music = !music;
+    /**
+     * Change the music to the value
+     * @param value A boolean which will represent the state of the music
+     */
+    public void changeMusic(boolean value){
+        music = value;
         print();
     }
 
+    /**
+     * Change the shadow to the value to his contrary
+     */
     public void changeShadows(){
         shadows = !shadows;
         print();
     }
 
+    /**
+     * Change the anti-aliasing to the value to his contrary
+     */
     public void changeAntialiasing(){
         antialiasing = !antialiasing;
         print();

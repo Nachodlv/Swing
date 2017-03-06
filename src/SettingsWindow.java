@@ -4,13 +4,34 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 
 /**
- * Created by GonzaOK on 2/3/17.
+ * A window model where the options setting are, such as sound, music and graphics.
  */
 public class SettingsWindow extends JFrame {
 
-    public SettingsWindow(ActionListener backListener, ActionListener soundListener, ActionListener musicListener, ActionListener shadowListener, ActionListener aListener){
+    /**
+     * it creates theSettingsWindow
+     * <p>
+     *     It creates a window with a borderLayout, where in the page start it is added a label
+     *     with the name "Settings". In the center it start inserting a panel with a boxLayour in which
+     *     it is assembled a panel with a grid layout. In the grid it is added the label sound and music
+     *     with his respective Jradio buttons. Then, in the boxLayour it is inserted the Graphics label,
+     *     and with another boxLayout with X.layout it is assembled the shadow and anti-aliasing button.
+     *     At the page end of the border layout there it is the back button.
+     * </p>
+     * @param backListener for the back button. It returns to the Main Window
+     * @param soundListenerTrue for the on button of the sound.
+     * @param soundListenerFalse for the off button the sound.
+     * @param musicListenerTrue for the on button of the music.
+     * @param musicListenerFalse for the off button of the music.
+     * @param shadowListener for the Shadow button
+     * @param aListener for the anti-aliasing button
+     */
+    public SettingsWindow(ActionListener backListener, ActionListener soundListenerTrue,ActionListener soundListenerFalse,ActionListener musicListenerTrue, ActionListener musicListenerFalse, ActionListener shadowListener, ActionListener aListener){
 
         super("Settings");
+        setMinimumSize(new Dimension(225,0));
+        setResizable(false);
+
 
         BorderLayout borderLayout = new BorderLayout();
         JPanel panelPageStart = new JPanel();
@@ -31,18 +52,18 @@ public class SettingsWindow extends JFrame {
         JLabel sound = new JLabel("Sound:");
         JLabel music = new JLabel("Music:");
         JRadioButton on1 = new JRadioButton("ON", true);
-        on1.addActionListener(soundListener);
+        on1.addActionListener(soundListenerTrue);
         JRadioButton off1 = new JRadioButton("OFF");
-        off1.addActionListener(soundListener);
+        off1.addActionListener(soundListenerFalse);
 
         ButtonGroup buttonGroup1 = new ButtonGroup();
         buttonGroup1.add(on1);
         buttonGroup1.add(off1);
 
         JRadioButton on2 = new JRadioButton("ON", true);
-        on2.addActionListener(musicListener);
+        on2.addActionListener(musicListenerTrue);
         JRadioButton off2 = new JRadioButton("OFF");
-        off2.addActionListener(musicListener);
+        off2.addActionListener(musicListenerFalse);
         ButtonGroup buttonGroup2 = new ButtonGroup();
         buttonGroup2.add(on2);
         buttonGroup2.add(off2);
@@ -91,10 +112,16 @@ public class SettingsWindow extends JFrame {
         setVisible(false);
     }
 
+    /**
+     * Show the MainWindow
+     */
     public void showSelf(){
         setVisible(true);
     }
 
+    /**
+     * Hide the MainWindows
+     */
     public void hideSelf(){
         setVisible(false);
     }

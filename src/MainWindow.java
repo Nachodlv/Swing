@@ -6,13 +6,27 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 
 /**
- * Created by GonzaOK on 2/3/17.
+ * The main window of the program, it contains the Start Game, Settings and Exit buttons.
  */
 public class MainWindow extends JFrame{
+
+    /**
+     * Constructor for the MainWindow class.
+     * <p>
+     *     It add to the main windows the title Main Menu. the layout of the frame is a borderLayout and it is added
+     *     in the PageStart the title "Trabajo Practico Swing" with a subtitle with the names of the member of the group.
+     *     Tn the Center of the borderLayout there it is a panel with a boxLayour and inside of it there are three buttons,
+     *     "Start Game, Settings and Exit" which are centered.
+     *</p>
+     *@param startGameListener Start Game: go to the Start Game window.
+     *@param settingListener  go to the setting window.
+     *@param exitListener Exit: close the program.
+     */
 
     public MainWindow(ActionListener startGameListener, ActionListener exitListener, ActionListener settingListener) {
 
         super("Main Menu");
+        setResizable(false);
 
         BorderLayout borderLayout = new BorderLayout();
 
@@ -62,10 +76,16 @@ public class MainWindow extends JFrame{
         setVisible(false);
     }
 
+    /**
+     * Show the MainWindow
+     */
     public void showSelf(){
         setVisible(true);
     }
 
+    /**
+     * Hide the MainWindows
+     */
     public void hideSelf(){
         setVisible(false);
     }
